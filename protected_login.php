@@ -43,10 +43,10 @@
     <!-- Most instances of SQL injection can be prevented by using PARAMETERIZED QUERIES (also known as PREPARED statements) instead of STRING CONCATENATION within the query. -->
     <?php
     if (isset($_GET['id'])) {
-        $host = "localhost";
-        $db = "store";
-        $user = "root";
-        $pwd = "";
+        $host = ""; // Add host
+        $db = "store"; // Add database name
+        $user = ""; // Add database user name
+        $pwd = ""; // Add database user pasword
 
         // Adding the entire code in a try catch block
         try {

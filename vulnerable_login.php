@@ -42,10 +42,10 @@
      </form>
      <?php
         if (isset($_GET['id'])) {
-            $host = "localhost";
-            $db = "store";
-            $user = "root";
-            $pwd = "";
+            $host = ""; // Add host
+            $db = "store"; // Add database name
+            $user = ""; // Add database user name
+            $pwd = ""; // Add database user pasword
             $link = new mysqli($host, $user, $pwd, $db);
             if ($link->connect_error) {
                 die("Connection failed: " . $link->connect_error);
